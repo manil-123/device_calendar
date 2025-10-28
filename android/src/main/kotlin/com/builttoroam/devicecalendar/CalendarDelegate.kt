@@ -126,7 +126,6 @@ class CalendarDelegate(
     private val _cachedParametersMap: MutableMap<Int, CalendarMethodsParametersCacheModel> = mutableMapOf()
     private var _gson: Gson? = null
 
-    private val uiThreadHandler = Handler(Looper.getMainLooper())
     private var calendarObserver: ContentObserver? = null
 
     init {
